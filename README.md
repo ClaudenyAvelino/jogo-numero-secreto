@@ -7,6 +7,17 @@
 4. No diretório onde você quira seu projeto inicie o repositório com o seguinte comando.
 >git init
 5. O comando git init transforma o diretório atual em um repositório do Git.
+6. Adicionar todos os arquivos do repositório.
+>git add .
+7. Gerar chave SSH
+Para gerar a chave, existe um comando que temos que copiar. Inclusive, existe um tutorial no próprio site do GitHub
+[como gerar uma chave SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+Exemplo:
+>ssh-keygen -t ed25519 -C "seu usuario".
+
+8. Sincronizar repositórios.
+>git push -u origin main
 
 
 ## Jogo número secreto
