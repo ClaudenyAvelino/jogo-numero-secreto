@@ -1,4 +1,4 @@
-# Revisão conhecimento github
+# Revisão github
 1. Criar conta no github
 2. Criar repositório no github
 3. Instalar git no PC fazendo Download para o seu SO.
@@ -18,6 +18,26 @@ Exemplo:
 
 8. Sincronizar repositórios.
 >git push -u origin main
+
+9. Sincronizar repositórios remoto com local.
+
+>git push -u origin main
+
+10. Listar os repositórios remotos:
+>git remote -v
+
+11. Remover um repositório remoto:
+
+>git remote remove origin
+
+12. Alterar a URL de um repositório remoto:
+
+>git remote set-url origin https://github.com/seu-usuario/seu-repositorio.git
+
+13. Alterar o apelido de um repositório remoto:
+
+>git remote rename origin novo-origin
+
 
 
 ## Jogo número secreto
