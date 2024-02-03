@@ -54,6 +54,19 @@ Exemplo:
 
 >`git log`
 
+## Resolvendo erro
+Conflito gerado não foi resolvido
+
+* Para isso você deve primeiramente abortar o merge:
+>git merge --abort
+* E então você precisa resolver o conflito atual no código, vendo o que está diferente do seu código com o que veio do pull
+* Após a resolução você precisa commitar esta resolução:
+>git commit -a -m "Resolvendo conflito"
+* E por último realizar o pull novamente:
+>git pull
+* Agora o código virá corretamente do repo remoto, e você estará com o erro resolvido também 🙂
+
+
 
 
 
