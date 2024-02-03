@@ -38,6 +38,23 @@ Exemplo:
 
 >git remote rename origin novo-origin
 
+# Clona Repositório
+
+>git clone "endereço repositorio"
+
+1. Exibir relatório status de arquivos alterados
+
+>git status
+
+2. Puxa os commits do remoto para o local.
+
+>git pull origin main
+
+3. Para verificarmos se isso foi feito
+
+>`git log`
+
+
 
 
 ## Jogo número secreto
