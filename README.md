@@ -66,6 +66,15 @@ Conflito gerado não foi resolvido
 >git pull
 * Agora o código virá corretamente do repo remoto, e você estará com o erro resolvido também 🙂
 
+##  O comando para apagar um commit
+
+>git reset --hard "id comit"
+
+
+## Alterar a mensagem do commit.
+
+>git commit --amend -m "mensagem"
+
 
 
 
