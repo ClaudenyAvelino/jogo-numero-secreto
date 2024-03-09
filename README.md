@@ -71,12 +71,47 @@ Conflito gerado não foi resolvido
 >git reset --hard "id comit"
 
 
+
+
 ## Alterar a mensagem do commit.
 
 >git commit --amend -m "mensagem"
 
 
+## Reverter um commit
+Com o git log identificamos o id do commit a reverter.
 
+exemplo.
+commit f3bff2f7ae4755c2c29e1ad5caf63d5ba293030d
+:...skipping...
+commit 39ff30b554bee022449fba88f955ee4d5c236592 (HEAD -> main)
+Author: claudeny avelino <claudeny.avelino@hotmail.com>
+Date:   Sun Feb 4 12:07:33 2024 -0300
 
+    Atualiza README editar remover commit
 
-## Jogo número secreto
+commit f3bff2f7ae4755c2c29e1ad5caf63d5ba293030d
+Author: claudeny avelino <claudeny.avelino@hotmail.com>
+Date:   Sat Feb 3 15:46:56 2024 -0300
+
+    Resolvendo conflito Readme
+
+commit 6da51cda04ea94a0733ac68c5f754893907f6a1e
+Merge: 1f55de8 4b182c3
+Author: claudeny avelino <claudeny.avelino@hotmail.com>
+Date:   Sat Feb 3 15:40:05 2024 -0300
+
+    Merge branch 'main' of github.com:ClaudenyAvelino/jogo-numero-secreto
+
+commit 1f55de85b090b824b63e182e3a8ac866fb56e2aa
+
+O commit que queremos desfazer é o.
+>commit f3bff2f7ae4755c2c29e1ad5caf63d5ba293030d
+
+comando.
+>git revert f3bff2f7ae4755c2c29e1ad5caf63d5ba293030d
+
+Proseguimos com
+>git push origin main
+
+Com isso,sincronizamos e enviamos esse commit de revert para o repositório remoto, permitindo que outras pessoas possam baixá-lo.
